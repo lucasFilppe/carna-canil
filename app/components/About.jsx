@@ -20,6 +20,23 @@ const images = [
   "/images/foto-12.jpg",
   "/images/foto-13.jpg",
   "/images/foto-14.jpg",
+  "/images/foto-15.jpg",
+  "/images/foto-16.jpg",
+  "/images/foto-17.jpg",
+  "/images/foto-18.jpg",
+  "/images/foto-19.jpg",
+  "/images/foto-20.jpg",
+  "/images/foto-21.jpg",
+  "/images/foto-22.jpg",
+  "/images/foto-23.jpg",
+  "/images/foto-24.jpg",
+  "/images/foto-25.jpg",
+  "/images/foto-26.jpg",
+  "/images/foto-27.jpg",
+  "/images/foto-28.jpg",
+  "/images/foto-29.jpg",
+  "/images/foto-30.jpg",
+
 ];
 
 const imagesFestas = [
@@ -28,7 +45,6 @@ const imagesFestas = [
   "/images/festas/festa-3.jpeg",
   "/images/festas/festa-4.jpeg",
   "/images/festas/festa-5.jpeg",
-  
 ];
 
 const About = () => {
@@ -56,14 +72,11 @@ const About = () => {
   };
 
   return (
-
-    
     <div className="flex flex-col sm:flex-row lg:items-start items-center justify-center">
-
       <div id="pacotes" className="max-w-2xl scroll-mt-20  p-4 mt-4 ">
-      <h2 className="text-center text-xl font-Ovo">
-        Garanta ja seu pacote 🎉
-      </h2>
+        <h2 className="text-center text-xl font-Ovo">
+          Garanta ja seu pacote 🎉
+        </h2>
         <p className="mb-10  font-Ovo">
           Conheça nossas linhas de pacotes:{" "}
           <span className="text-primary">Confort</span> e{" "}
@@ -222,7 +235,9 @@ const About = () => {
       </div>
 
       <div id="fotos" className="scroll-mt-20 min-h-screen p-4 mt-4">
-        <h2 className="text-center text-xl mt-5 font-Ovo">Veja como é a experiência! 📸</h2>
+        <h2 className="text-center text-xl mt-5 font-Ovo">
+          Veja como é a experiência! 📸
+        </h2>
         <div className="relative flex items-center justify-center mt-6">
           <button
             onClick={prevImage}
@@ -230,13 +245,14 @@ const About = () => {
           >
             &#10094;
           </button>
-          <div className="w-64 sm:w-80 rounded-3xl max-w-none">
+          <div className="w-[370px] h-[487px] rounded-lg overflow-hidden">
             <Image
               src={images[currentIndex]}
               alt="user"
-              width={320}
-              height={320}
-              className="w-full h-full object-cover rounded-3xl"
+              width={390}
+              height={487}
+              className="w-full h-full object-cover"
+              crossOrigin="anonymous"
             />
           </div>
           <button
@@ -248,7 +264,6 @@ const About = () => {
         </div>
       </div>
     </div>
-
   );
 };
 
