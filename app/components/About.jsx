@@ -36,7 +36,6 @@ const images = [
   "/images/foto-28.jpg",
   "/images/foto-29.jpg",
   "/images/foto-30.jpg",
-
 ];
 
 const imagesFestas = [
@@ -108,7 +107,7 @@ const About = () => {
                 width={20}
                 height={20}
               />
-              <p className="text-gray-700 text-sm"> 3 blocos</p>
+              <p className="text-gray-700 text-sm"> 2 blocos</p>
             </div>
 
             <div className="flex items-center gap-2">
@@ -121,7 +120,7 @@ const About = () => {
               <p className="text-gray-700 text-sm"> 5 festas</p>
             </div>
 
-            <h5 className=" font-semibold text-gray-700">Confort prata</h5>
+            <h5 className=" font-semibold text-gray-700">Confort ouro</h5>
 
             <div className="flex items-center gap-2">
               <Image
@@ -141,6 +140,38 @@ const About = () => {
                 height={20}
               />
               <p className="text-gray-700 text-sm"> 3 blocos</p>
+            </div>
+
+            <div className="flex items-center gap-2">
+              <Image
+                src="/incluido.svg"
+                alt="Ícone de hospedagem"
+                width={20}
+                height={20}
+              />
+              <p className="text-gray-700 text-sm"> 5 festas</p>
+            </div>
+
+            <h5 className=" font-semibold text-gray-700">Confort diamante</h5>
+
+            <div className="flex items-center gap-2">
+              <Image
+                src="/incluido.svg"
+                alt="Ícone de hospedagem"
+                width={20}
+                height={20}
+              />
+              <p className="text-gray-700 text-sm"> Hospedagem em colchao</p>
+            </div>
+
+            <div className="flex items-center gap-2">
+              <Image
+                src="/incluido.svg"
+                alt="Ícone de hospedagem"
+                width={20}
+                height={20}
+              />
+              <p className="text-gray-700 text-sm"> 4 blocos</p>
             </div>
 
             <div className="flex items-center gap-2">
@@ -156,8 +187,8 @@ const About = () => {
 
           <li className="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:translate-y-1 duration-500 hover:shadow-black">
             {/*<Image src={icon} alt={title} className="w-7 mt-3" />*/}
-            <h3 className="my-4 font-semibold text-gray-700">Linha Confort</h3>
-            <h5 className=" font-semibold text-gray-700">Confort prata</h5>
+            <h3 className="my-4 font-semibold text-gray-700">Linha Classic</h3>
+            <h5 className=" font-semibold text-gray-700">Classic prata</h5>
 
             <div className="flex items-center gap-2">
               <Image
@@ -166,7 +197,39 @@ const About = () => {
                 width={20}
                 height={20}
               />
-              <p className="text-gray-700 text-sm"> Hospedagem em colchao</p>
+              <p className="text-gray-700 text-sm"> Hospedagem em colchonete</p>
+            </div>
+
+            <div className="flex items-center gap-2">
+              <Image
+                src="/incluido.svg"
+                alt="Ícone de hospedagem"
+                width={20}
+                height={20}
+              />
+              <p className="text-gray-700 text-sm"> 2 blocos</p>
+            </div>
+
+            <div className="flex items-center gap-2">
+              <Image
+                src="/incluido.svg"
+                alt="Ícone de hospedagem"
+                width={20}
+                height={20}
+              />
+              <p className="text-gray-700 text-sm"> 5 festas</p>
+            </div>
+
+            <h5 className=" font-semibold text-gray-700">Classic Ouro</h5>
+
+            <div className="flex items-center gap-2">
+              <Image
+                src="/incluido.svg"
+                alt="Ícone de hospedagem"
+                width={20}
+                height={20}
+              />
+              <p className="text-gray-700 text-sm"> Hospedagem em colchonete</p>
             </div>
 
             <div className="flex items-center gap-2">
@@ -189,7 +252,7 @@ const About = () => {
               <p className="text-gray-700 text-sm"> 5 festas</p>
             </div>
 
-            <h5 className=" font-semibold text-gray-700">Confort prata</h5>
+            <h5 className=" font-semibold text-gray-700">Classic Diamante</h5>
 
             <div className="flex items-center gap-2">
               <Image
@@ -198,7 +261,7 @@ const About = () => {
                 width={20}
                 height={20}
               />
-              <p className="text-gray-700 text-sm"> Hospedagem em colchao</p>
+              <p className="text-gray-700 text-sm"> Hospedagem em colchonete</p>
             </div>
 
             <div className="flex items-center gap-2">
@@ -208,7 +271,7 @@ const About = () => {
                 width={20}
                 height={20}
               />
-              <p className="text-gray-700 text-sm"> 3 blocos</p>
+              <p className="text-gray-700 text-sm"> 4 blocos</p>
             </div>
 
             <div className="flex items-center gap-2">
