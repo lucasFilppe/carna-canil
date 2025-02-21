@@ -1,14 +1,12 @@
-// components/CarnavalMarquee.js
-import React from 'react';
+import React from "react";
 
-// O componente agora recebe `palavras` como uma prop
-const CarnavalMarquee = ({ palavras = [], className = '' }) => {
+const CarnavalMarquee = ({ palavras = [], className = "" }) => {
   return (
-    <div className={`overflow-hidden whitespace-nowrap py-4 ${className}`}>
-      {/* Primeira linha */}
-      <div className="animate-marquee inline-block">
-        {palavras.map((palavra, index) => (
-          <span key={index} className="text-2xl font-bold mx-8">
+    <div className={`overflow-hidden whitespace-nowrap py-4 relative ${className}`}>
+      <div className="flex gap-8 animate-marquee">
+        {/* Criamos duas cópias das palavras para um efeito contínuo */}
+        {[...palavras, ...palavras].map((palavra, index) => (
+          <span key={index} className="text-2xl font-bold">
             {palavra}
           </span>
         ))}

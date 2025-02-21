@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
-import { useState, useEffect} from "react";
+import { useState, useEffect } from "react";
+import { assets } from "@/assets/assets";
 import Image from "next/image";
 
 const imagesFestas = [
@@ -27,18 +28,14 @@ const Festas = () => {
   return (
     <div id="festas" className="scroll-mt-20  min-h-screen p-5">
       <h2 className="text-center text-xl font-Ovo">
-        🌟 Viva momentos inesquecíveis! 🌟
+        <strong>Viva momentos inesquecíveis! </strong>
       </h2>
-      <p className="font-Ovo text-center">
+      <p className="font-Ovo text-center max-w-md mx-auto">
         Junte-se a nós e mergulhe em festas cheias de energia, cores e alegria!
-        </p>
-        <p className="font-Ovo text-center">
-          Deixe a música te levar, conheça pessoas incríveis e crie memórias que
-          vão durar para sempre. Você faz parte da festa. Vem com a gente! 🥳🎉
-        
+        Deixe a música te levar, conheça pessoas incríveis e crie memórias que
+        vão durar para sempre. Você faz parte da festa. Vem com a gente! 🥳🎉
       </p>
       <div className="relative flex items-center justify-center mt-6">
-        
         <div className="w-full sm:w-[400px] h-[400px] rounded-3xl max-w-none">
           <Image
             src={imagesFestas[currentIndexFestas]}
@@ -48,8 +45,19 @@ const Festas = () => {
             className="w-full h-full object-cover rounded-3xl"
           />
         </div>
-        
+       
       </div>
+      <div className="flex items-center justify-center">
+      <div className="flex flex-col sm:flex-row items-center gap-2 mt-5">
+          <a
+            href="#contato"
+            className="px-10 py-3 border hover:translate-y-1 duration-500 hover:shadow-black rounded-full bg-bluePrimeiro hover:bg-blueSegundo text-white flex items-center gap-2"
+          >
+            <strong>Comprar agora</strong>
+            <Image src={assets.right_arrow_white} alt="" className="w-4" />
+          </a>
+        </div>
+        </div>
     </div>
   );
 };

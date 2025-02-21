@@ -12,6 +12,9 @@ export default {
         darkHover: '#2a004a',
         darkTheme: '#11001f',
         canilThemeRoxo: '#5e1dad',
+        textCanil: "#ffffff",
+        bluePrimeiro: "#42a0ed",
+        blueSegundo: "#267cc1"
       },
       fontFamily:{
         Outfit: ["Outfit", "sans-serif"],
@@ -22,11 +25,11 @@ export default {
         'white': '4px 4px 0 #fff',
       },
       animation: {
-        marquee: 'marquee 20s linear infinite',
+        marquee: 'marquee 15s linear infinite',
       },
       keyframes: {
         marquee: {
-          '0%': { transform: 'translateX(0%)' },
+          '0%': { transform: 'translateX(100%)' },
           '100%': { transform: 'translateX(-100%)' },
         },
       }

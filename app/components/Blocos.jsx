@@ -50,17 +50,17 @@ const Blocos = () => {
   return (
     <div id="blocos" className=" min-h-screen p-5 flex flex-col items-center justify-center">
       <h2 className="text-center text-xl font-Ovo flex items-center justify-center gap-2">
-        {bloco.titulo}
+        <strong>{bloco.titulo}</strong>
         <Image
           src={bloco.logo}
           width={50}
           height={50}
           alt={`Logo do ${bloco.titulo}`}
-          className="w-10 h-10 cursor-pointer"
+          className="w-10 h-10 cursor-pointer rounded-full"
         />
       </h2>
       <div className="relative flex items-center justify-center mt-2">
-      <button onClick={prevBloco} className="absolute left-2 bg-white p-2 rounded-full shadow-md">
+      <button onClick={prevBloco} className="absolute left-2 bg-bluePrimeiro p-2 rounded-full shadow-md">
           <ChevronLeft size={24} />
         </button>
         <div className="w-full sm:w-[400px] h-[400px] rounded-3xl max-w-none">
@@ -72,14 +72,16 @@ const Blocos = () => {
             className="w-full h-full object-cover rounded-3xl"
           />
         </div>
-        <button onClick={nextBloco} className="absolute right-2 bg-white p-2 rounded-full shadow-md">
+        <button onClick={nextBloco} className="absolute right-2 bg-bluePrimeiro p-2 rounded-full shadow-md">
           <ChevronRight size={24} />
         </button>
       </div>
-      <h3 className="mt-2 text-lg font-semibold">Camarote</h3>
-      <p className="text-sm text-center">{bloco.camarote}</p>
-      <h3 className="mt-2 text-lg font-semibold">Pista</h3>
-      <p className="text-sm text-center">{bloco.pista}</p>
+      <h3 className="mt-2 text-lg font-semibold text-center">Camarote</h3>
+<p className="text-sm text-center max-w-md mx-auto">{bloco.camarote}</p>
+
+<h3 className="mt-2 text-lg font-semibold text-center">Pista</h3>
+<p className="text-sm text-center max-w-md mx-auto">{bloco.pista}</p>
+
     </div>
   );
 };

@@ -55,9 +55,9 @@ const About = () => {
     <div className="flex flex-col sm:flex-row lg:items-start items-center justify-center">
       <div id="pacotes" className="max-w-2xl scroll-mt-20  p-4 mt-4 ">
         <h2 className="text-center text-xl font-Ovo">
-          Garanta ja seu pacote 🎉
+          <strong>Garanta ja seu pacote 🎉</strong>
         </h2>
-        <p className="mb-10  font-Ovo">
+        <p className="mb-10  font-Ovo text-center">
           Conheça nossas linhas de pacotes:{" "}
           <span className="text-primary">Confort</span> e{" "}
           <span className="text-secondary">Classic </span>
@@ -66,10 +66,10 @@ const About = () => {
         </p>
         <p className="font-Ovo"> </p>
         <ul className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl">
-          <li className="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:translate-y-1 duration-500 hover:shadow-black">
+          <li className="border-[0.5px] border-black rounded-xl p-6 cursor-pointer hover:bg-blueSegundo hover:translate-y-1 duration-500 hover:shadow-black">
             {/*<Image src={icon} alt={title} className="w-7 mt-3" />*/}
-            <h3 className="my-4 font-semibold text-gray-700">Linha Confort</h3>
-            <h5 className=" font-semibold text-gray-700">Confort prata</h5>
+            <h3 className="my-4 font-semibold"><strong>Linha Confort</strong></h3>
+            <h5 className=" font-semibold">Confort prata</h5>
 
             <div className="flex items-center gap-2">
               <Image
@@ -77,8 +77,9 @@ const About = () => {
                 alt="Ícone de hospedagem"
                 width={20}
                 height={20}
+                className="bg-textCanil"
               />
-              <p className="text-gray-700 text-sm"> Hospedagem em colchao</p>
+              <p className="text-sm"> Hospedagem em colchao</p>
             </div>
 
             <div className="flex items-center gap-2">
@@ -87,8 +88,9 @@ const About = () => {
                 alt="Ícone de hospedagem"
                 width={20}
                 height={20}
+                className="bg-textCanil"
               />
-              <p className="text-gray-700 text-sm"> 2 blocos</p>
+              <p className=" text-sm"> 2 blocos</p>
             </div>
 
             <div className="flex items-center gap-2">
@@ -97,11 +99,12 @@ const About = () => {
                 alt="Ícone de hospedagem"
                 width={20}
                 height={20}
+                className="bg-textCanil"
               />
-              <p className="text-gray-700 text-sm"> 5 festas</p>
+              <p className=" text-sm"> 5 festas</p>
             </div>
 
-            <h5 className=" font-semibold text-gray-700">Confort ouro</h5>
+            <h5 className=" font-semibold ">Confort ouro</h5>
 
             <div className="flex items-center gap-2">
               <Image
@@ -109,18 +112,9 @@ const About = () => {
                 alt="Ícone de hospedagem"
                 width={20}
                 height={20}
+                className="bg-textCanil"
               />
-              <p className="text-gray-700 text-sm"> Hospedagem em colchao</p>
-            </div>
-
-            <div className="flex items-center gap-2">
-              <Image
-                src="/incluido.svg"
-                alt="Ícone de hospedagem"
-                width={20}
-                height={20}
-              />
-              <p className="text-gray-700 text-sm"> 3 blocos</p>
+              <p className=" text-sm"> Hospedagem em colchao</p>
             </div>
 
             <div className="flex items-center gap-2">
@@ -129,20 +123,9 @@ const About = () => {
                 alt="Ícone de hospedagem"
                 width={20}
                 height={20}
+                className="bg-textCanil"
               />
-              <p className="text-gray-700 text-sm"> 5 festas</p>
-            </div>
-
-            <h5 className=" font-semibold text-gray-700">Confort diamante</h5>
-
-            <div className="flex items-center gap-2">
-              <Image
-                src="/incluido.svg"
-                alt="Ícone de hospedagem"
-                width={20}
-                height={20}
-              />
-              <p className="text-gray-700 text-sm"> Hospedagem em colchao</p>
+              <p className=" text-sm"> 3 blocos</p>
             </div>
 
             <div className="flex items-center gap-2">
@@ -151,8 +134,22 @@ const About = () => {
                 alt="Ícone de hospedagem"
                 width={20}
                 height={20}
+                className="bg-textCanil"
               />
-              <p className="text-gray-700 text-sm"> 4 blocos</p>
+              <p className=" text-sm"> 5 festas</p>
+            </div>
+
+            <h5 className=" font-semibold ">Confort diamante</h5>
+
+            <div className="flex items-center gap-2">
+              <Image
+                src="/incluido.svg"
+                alt="Ícone de hospedagem"
+                width={20}
+                height={20}
+                className="bg-textCanil"
+              />
+              <p className=" text-sm"> Hospedagem em colchao</p>
             </div>
 
             <div className="flex items-center gap-2">
@@ -161,15 +158,27 @@ const About = () => {
                 alt="Ícone de hospedagem"
                 width={20}
                 height={20}
+                className="bg-textCanil"
               />
-              <p className="text-gray-700 text-sm"> 5 festas</p>
+              <p className=" text-sm"> 4 blocos</p>
+            </div>
+
+            <div className="flex items-center gap-2">
+              <Image
+                src="/incluido.svg"
+                alt="Ícone de hospedagem"
+                width={20}
+                height={20}
+                className="bg-textCanil"
+              />
+              <p className=" text-sm"> 5 festas</p>
             </div>
           </li>
 
-          <li className="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:translate-y-1 duration-500 hover:shadow-black">
+          <li className="border-[0.5px] border-black rounded-xl p-6 cursor-pointer  hover:bg-blueSegundo hover:translate-y-1 duration-500 hover:shadow-black">
             {/*<Image src={icon} alt={title} className="w-7 mt-3" />*/}
-            <h3 className="my-4 font-semibold text-gray-700">Linha Classic</h3>
-            <h5 className=" font-semibold text-gray-700">Classic prata</h5>
+            <h3 className="my-4 font-semibold "><strong>Linha Classic</strong></h3>
+            <h5 className=" font-semibold ">Classic prata</h5>
 
             <div className="flex items-center gap-2">
               <Image
@@ -177,8 +186,9 @@ const About = () => {
                 alt="Ícone de hospedagem"
                 width={20}
                 height={20}
+                className="bg-textCanil"
               />
-              <p className="text-gray-700 text-sm"> Hospedagem em colchonete</p>
+              <p className=" text-sm"> Hospedagem em colchonete</p>
             </div>
 
             <div className="flex items-center gap-2">
@@ -187,8 +197,9 @@ const About = () => {
                 alt="Ícone de hospedagem"
                 width={20}
                 height={20}
+                className="bg-textCanil"
               />
-              <p className="text-gray-700 text-sm"> 2 blocos</p>
+              <p className=" text-sm"> 2 blocos</p>
             </div>
 
             <div className="flex items-center gap-2">
@@ -197,30 +208,22 @@ const About = () => {
                 alt="Ícone de hospedagem"
                 width={20}
                 height={20}
+                className="bg-textCanil"
               />
-              <p className="text-gray-700 text-sm"> 5 festas</p>
+              <p className=" text-sm"> 5 festas</p>
             </div>
 
-            <h5 className=" font-semibold text-gray-700">Classic Ouro</h5>
+            <h5 className=" font-semibold ">Classic Ouro</h5>
 
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2 ">
               <Image
                 src="/incluido.svg"
                 alt="Ícone de hospedagem"
                 width={20}
                 height={20}
+                className="bg-textCanil"
               />
-              <p className="text-gray-700 text-sm"> Hospedagem em colchonete</p>
-            </div>
-
-            <div className="flex items-center gap-2">
-              <Image
-                src="/incluido.svg"
-                alt="Ícone de hospedagem"
-                width={20}
-                height={20}
-              />
-              <p className="text-gray-700 text-sm"> 3 blocos</p>
+              <p className=" text-sm"> Hospedagem em colchonete</p>
             </div>
 
             <div className="flex items-center gap-2">
@@ -229,20 +232,9 @@ const About = () => {
                 alt="Ícone de hospedagem"
                 width={20}
                 height={20}
+                className="bg-textCanil"
               />
-              <p className="text-gray-700 text-sm"> 5 festas</p>
-            </div>
-
-            <h5 className=" font-semibold text-gray-700">Classic Diamante</h5>
-
-            <div className="flex items-center gap-2">
-              <Image
-                src="/incluido.svg"
-                alt="Ícone de hospedagem"
-                width={20}
-                height={20}
-              />
-              <p className="text-gray-700 text-sm"> Hospedagem em colchonete</p>
+              <p className=" text-sm"> 3 blocos</p>
             </div>
 
             <div className="flex items-center gap-2">
@@ -251,8 +243,22 @@ const About = () => {
                 alt="Ícone de hospedagem"
                 width={20}
                 height={20}
+                className="bg-textCanil"
               />
-              <p className="text-gray-700 text-sm"> 4 blocos</p>
+              <p className=" text-sm"> 5 festas</p>
+            </div>
+
+            <h5 className=" font-semibold ">Classic Diamante</h5>
+
+            <div className="flex items-center gap-2">
+              <Image
+                src="/incluido.svg"
+                alt="Ícone de hospedagem"
+                width={20}
+                height={20}
+                className="bg-textCanil"
+              />
+              <p className=" text-sm"> Hospedagem em colchonete</p>
             </div>
 
             <div className="flex items-center gap-2">
@@ -261,8 +267,20 @@ const About = () => {
                 alt="Ícone de hospedagem"
                 width={20}
                 height={20}
+                className="bg-textCanil"
               />
-              <p className="text-gray-700 text-sm"> 5 festas</p>
+              <p className=" text-sm"> 4 blocos</p>
+            </div>
+
+            <div className="flex items-center gap-2">
+              <Image
+                src="/incluido.svg"
+                alt="Ícone de hospedagem"
+                width={20}
+                height={20}
+                className="bg-textCanil"
+              />
+              <p className=" text-sm"> 5 festas</p>
             </div>
           </li>
         </ul>
@@ -270,17 +288,17 @@ const About = () => {
         <div className="flex flex-col sm:flex-row items-center gap-2 mt-5">
           <a
             href="#contato"
-            className="px-10 py-3 border border-white rounded-full bg-black text-white flex items-center gap-2"
+            className="px-10 py-3 border hover:translate-y-1 duration-500 hover:shadow-black rounded-full bg-bluePrimeiro hover:bg-blueSegundo text-white flex items-center gap-2"
           >
-            Comprar agora
-            <Image src={assets.right_arrow_white} alt="" className="w-4" />
+           <strong>Comprar agora</strong> 
+            <Image src={assets.right_arrow_white } alt="" className="w-4" />
           </a>
         </div>
       </div>
 
       <div id="fotos" className="scroll-mt-20 min-h-screen p-4 mt-4">
         <h2 className="text-center text-xl mt-5 font-Ovo">
-          Veja como é a experiência! 📸
+         <strong>Veja como é a experiência! 📸</strong> 
         </h2>
         <div className="relative flex items-center justify-center mt-6">
          

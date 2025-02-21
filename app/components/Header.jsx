@@ -1,11 +1,9 @@
 import React from "react";
-import { assets } from "@/assets/assets";
-import Image from "next/image";
-import CarnavalMarquee from "./Palavras";
+
 
 const Header = () => {
   return (
-    <div className="w-full px-4 text-center mx-auto min-h-screen flex flex-col justify-center items-center">
+    <div className="w-full px-4 text-center mx-auto min-h-screen flex flex-col justify-center items-center font-">
       <div className="flex justify-center items-center mt-16 w-full">
         <video
           src="/after-movie-principal.MP4"
@@ -13,11 +11,14 @@ const Header = () => {
           muted
           loop
           controls
-          className="w-full md:max-w-3xl rounded-lg shadow-lg"
+          className="w-full rounded-lg shadow-lg md:max-w-3xl md:aspect-video"
         />
       </div>
-      <ul className="w-full max-w-2xl px-4 font-Ovo mt-8">
-        <h2 className="text-center text-xl font-Ovo mb-4">Todos pacotes incluem:</h2>
+
+      <ul className="w-full  px-4 font-Ovo mt-8 max-w-md mx-auto">
+        <h2 className="text-center text-xl font-Ovo mb-4">
+          <strong>Todos pacotes incluem:</strong>
+        </h2>
         <li className="text-center ">
           ✔️ <strong>5 dias de hospedagem</strong> em um local confortável e
           pertinho da folia

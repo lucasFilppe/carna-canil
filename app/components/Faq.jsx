@@ -53,7 +53,7 @@ const Faq = () => {
                 </span>
               </button>
               {activeIndex === index && (
-                <p className="mt-2 text-gray-600 text-sm">{item.answer}</p>
+                <p className="mt-2 text-white text-sm">{item.answer}</p>
               )}
             </div>
           ))}
