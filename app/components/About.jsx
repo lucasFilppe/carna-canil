@@ -7,6 +7,7 @@ import { useState, useEffect } from "react";
 
 const images = [
   "/images/foto-3.jpg",
+  
   "/images/foto-4.jpg",
   "/images/foto-1.jpg", // Substitua pelos nomes dos arquivos na pasta public
   "/images/foto-2.jpg",
@@ -36,6 +37,31 @@ const images = [
   "/images/foto-28.jpg",
   "/images/foto-29.jpg",
   "/images/foto-30.jpg",
+  "/images/foto-31.jpg",
+  "/images/foto-32.jpg",
+  "/images/foto-33.jpg",
+  "/images/foto-34.jpg",
+  "/images/foto-35.jpg",
+  "/images/foto-31.jpg",
+  "/images/foto-32.jpg",
+  "/images/foto-33.jpg",
+  "/images/foto-34.jpg",
+  "/images/foto-35.jpg",
+  "/images/foto-36.jpg",
+  "/images/foto-37.jpg",
+  "/images/foto-38.jpg",
+  "/images/foto-39.jpg",
+  "/images/foto-40.jpg",
+  "/images/foto-41.jpg",
+  "/images/foto-42.jpg",
+  "/images/foto-43.jpg",
+  "/images/foto-44.jpg",
+  "/images/foto-45.jpg",
+  "/images/foto-46.jpg",
+  "/images/foto-47.jpg",
+  "/images/foto-48.jpg",
+  "/images/foto-49.jpg",
+  "/images/foto-50.jpg",
 ];
 
 const About = () => {
@@ -287,7 +313,9 @@ const About = () => {
 
         <div className="flex flex-col sm:flex-row items-center gap-2 mt-5">
           <a
-            href="#contato"
+            href="https://wa.me/553192961063"
+            target="_blank"
+            rel="noopener noreferrer"
             className="px-10 py-3 border hover:translate-y-1 duration-500 hover:shadow-black rounded-full bg-bluePrimeiro hover:bg-blueSegundo text-white flex items-center gap-2"
           >
            <strong>Comprar agora</strong> 

@@ -1,6 +1,7 @@
 import { Outfit, Ovo } from "next/font/google";
 import Footer from "./components/Footer";
 import "./globals.css";
+import { Analytics } from '@vercel/analytics/next';
 
 const outfit = Outfit({
   subsets: ["latin"],
@@ -24,7 +25,7 @@ export default function RootLayout({ children }) {
         className={`${outfit.className} ${ovo.className} antialiased leading-8 overflow-x-hidden`}
       >
         <main>{children}</main>
-
+        <Analytics />
         <Footer />
       </body>
     </html>

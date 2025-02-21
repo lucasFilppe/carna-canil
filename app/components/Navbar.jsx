@@ -96,7 +96,9 @@ const Navbar = () => {
           </button>
 
           <a
-            href="#contato"
+            href="https://wa.me/553192961063"
+            target="_blank"
+            rel="noopener noreferrer"
             className="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 bg-bluePrimeiro rounded-full ml-4 font-Ovo"
           >
             Contato{" "}

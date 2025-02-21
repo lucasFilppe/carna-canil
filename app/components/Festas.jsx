@@ -45,19 +45,20 @@ const Festas = () => {
             className="w-full h-full object-cover rounded-3xl"
           />
         </div>
-       
       </div>
       <div className="flex items-center justify-center">
-      <div className="flex flex-col sm:flex-row items-center gap-2 mt-5">
+        <div className="flex flex-col sm:flex-row items-center gap-2 mt-5">
           <a
-            href="#contato"
+            href="https://wa.me/553192961063"
+            target="_blank"
+            rel="noopener noreferrer"
             className="px-10 py-3 border hover:translate-y-1 duration-500 hover:shadow-black rounded-full bg-bluePrimeiro hover:bg-blueSegundo text-white flex items-center gap-2"
           >
             <strong>Comprar agora</strong>
             <Image src={assets.right_arrow_white} alt="" className="w-4" />
           </a>
         </div>
-        </div>
+      </div>
     </div>
   );
 };
