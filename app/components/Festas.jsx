@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect} from "react";
 import Image from "next/image";
 
 const imagesFestas = [
@@ -14,25 +14,15 @@ const imagesFestas = [
 const Festas = () => {
   const [currentIndexFestas, setCurrentIndexFestas] = useState(0);
 
-  const prevImage = () => {
-    setCurrentIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
-  };
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndexFestas((prevIndex) =>
+        prevIndex === imagesFestas.length - 1 ? 0 : prevIndex + 1
+      );
+    }, 3000); // Troca de imagem a cada 3 segundos
 
-  const nextImage = () => {
-    setCurrentIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
-  };
-
-  const prevImageFestas = () => {
-    setCurrentIndexFestas((prevIndex) =>
-      prevIndex === 0 ? imagesFestas.length - 1 : prevIndex - 1
-    );
-  };
-
-  const nextImageFestas = () => {
-    setCurrentIndexFestas((prevIndex) =>
-      prevIndex === imagesFestas.length - 1 ? 0 : prevIndex + 1
-    );
-  };
+    return () => clearInterval(interval); // Limpa o intervalo quando o componente desmonta
+  }, []);
 
   return (
     <div id="festas" className="scroll-mt-20  min-h-screen p-5">
@@ -48,12 +38,7 @@ const Festas = () => {
         
       </p>
       <div className="relative flex items-center justify-center mt-6">
-        <button
-          onClick={prevImageFestas}
-          className="absolute left-0 sm:left-[calc(50%-200px-40px)] bg-black bg-opacity-50 p-2 rounded-full text-white"
-        >
-          &#10094;
-        </button>
+        
         <div className="w-full sm:w-[400px] h-[400px] rounded-3xl max-w-none">
           <Image
             src={imagesFestas[currentIndexFestas]}
@@ -63,12 +48,7 @@ const Festas = () => {
             className="w-full h-full object-cover rounded-3xl"
           />
         </div>
-        <button
-          onClick={nextImageFestas}
-          className="absolute right-0 sm:right-[calc(50%-200px-40px)] bg-black bg-opacity-50 p-2 rounded-full text-white"
-        >
-          &#10095;
-        </button>
+        
       </div>
     </div>
   );

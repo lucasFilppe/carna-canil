@@ -1,9 +1,9 @@
 "use client";
 
-import { assets, infoList, toolsData } from "@/assets/assets";
+import { assets } from "@/assets/assets";
 import Image from "next/image";
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const images = [
   "/images/foto-3.jpg",
@@ -38,37 +38,18 @@ const images = [
   "/images/foto-30.jpg",
 ];
 
-const imagesFestas = [
-  "/images/festas/festa-1.jpeg",
-  "/images/festas/festa-2.jpeg",
-  "/images/festas/festa-3.jpeg",
-  "/images/festas/festa-4.jpeg",
-  "/images/festas/festa-5.jpeg",
-];
-
 const About = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [currentIndexFestas, setCurrentIndexFestas] = useState(0);
+  
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) =>
+        prevIndex === images.length - 1 ? 0 : prevIndex + 1
+      );
+    }, 2000); // Troca de imagem a cada 3 segundos
 
-  const prevImage = () => {
-    setCurrentIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
-  };
-
-  const nextImage = () => {
-    setCurrentIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
-  };
-
-  const prevImageFestas = () => {
-    setCurrentIndexFestas((prevIndex) =>
-      prevIndex === 0 ? imagesFestas.length - 1 : prevIndex - 1
-    );
-  };
-
-  const nextImageFestas = () => {
-    setCurrentIndexFestas((prevIndex) =>
-      prevIndex === imagesFestas.length - 1 ? 0 : prevIndex + 1
-    );
-  };
+    return () => clearInterval(interval); // Limpa o intervalo quando o componente desmonta
+  }, []);
 
   return (
     <div className="flex flex-col sm:flex-row lg:items-start items-center justify-center">
@@ -302,12 +283,7 @@ const About = () => {
           Veja como é a experiência! 📸
         </h2>
         <div className="relative flex items-center justify-center mt-6">
-          <button
-            onClick={prevImage}
-            className="absolute left-0 bg-black bg-opacity-50 p-2 rounded-full text-white"
-          >
-            &#10094;
-          </button>
+         
           <div className="w-[370px] h-[487px] rounded-lg overflow-hidden">
             <Image
               src={images[currentIndex]}
@@ -318,12 +294,6 @@ const About = () => {
               crossOrigin="anonymous"
             />
           </div>
-          <button
-            onClick={nextImage}
-            className="absolute right-0 bg-black bg-opacity-50 p-2 rounded-full text-white"
-          >
-            &#10095;
-          </button>
         </div>
       </div>
     </div>
