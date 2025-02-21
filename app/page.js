@@ -1,4 +1,5 @@
 import About from "./components/About";
+import Blocos from "./components/Blocos";
 import Faq from "./components/Faq";
 import Festas from "./components/Festas";
 import Header from "./components/Header";
@@ -12,6 +13,8 @@ export default function Home() {
       <Navbar/>
       
       <Header/>
+
+      <Blocos/>
       
       <Festas/>
       

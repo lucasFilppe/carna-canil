@@ -50,8 +50,13 @@ const Navbar = () => {
             </a>
           </li>
           <li>
-            <a href="#fotos" className="font-Ovo">
-              Fotos
+            <a href="#blocos" className="font-Ovo">
+              Blocos
+            </a>
+          </li>
+          <li>
+            <a href="#festas" className="font-Ovo">
+              Festas
             </a>
           </li>
           <li>
@@ -60,13 +65,13 @@ const Navbar = () => {
             </a>
           </li>
           <li>
-            <a href="#trabalho" className="font-Ovo">
-              Meu trabalho
+            <a href="#fotos" className="font-Ovo">
+              Fotos
             </a>
           </li>
           <li>
-            <a href="#contato" className="font-Ovo">
-              Contate me
+            <a href="#faq" className="font-Ovo">
+              FAQ
             </a>
           </li>
         </ul>
@@ -101,6 +106,11 @@ const Navbar = () => {
           <li className="pl-5">
             <a href="#top" className="font-Ovo" onClick={closeMenu}>
               Inicio
+            </a>
+          </li>
+          <li className="pl-5">
+            <a href="#blocos" className="font-Ovo" onClick={closeMenu}>
+              Blocos
             </a>
           </li>
           <li className="pl-5">

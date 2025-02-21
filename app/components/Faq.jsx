@@ -13,7 +13,7 @@ const faqData = [
   },
   {
     question: "Onde será o evento?",
-    answer: "República Cosa Nostra (Ouro Preto-MG).",
+    answer: "República Canil (Ouro Preto-MG).",
   },
   {
     question: "Posso personalizar meu abadá?",
@@ -30,7 +30,7 @@ const Faq = () => {
 
   return (
     <div id="faq" className="px-4 ">
-      <div className="max-w-2xl mx-auto">
+      <div className="max-w-3xl mx-auto">
         <h2 className="text-xl font-bold text-center mb-8 text-customBlue">
           Perguntas Frequentes
         </h2>
