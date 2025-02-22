@@ -6,11 +6,9 @@ import React from "react";
 import { useState, useEffect } from "react";
 
 const images = [
-  "/images/foto-3.jpg",
-  
-  "/images/foto-4.jpg",
   "/images/foto-1.jpg", // Substitua pelos nomes dos arquivos na pasta public
   "/images/foto-2.jpg",
+  "/images/foto-3.jpg",
   "/images/foto-5.jpg",
   "/images/foto-6.jpg",
   "/images/foto-7.jpg",
@@ -37,31 +35,6 @@ const images = [
   "/images/foto-28.jpg",
   "/images/foto-29.jpg",
   "/images/foto-30.jpg",
-  "/images/foto-31.jpg",
-  "/images/foto-32.jpg",
-  "/images/foto-33.jpg",
-  "/images/foto-34.jpg",
-  "/images/foto-35.jpg",
-  "/images/foto-31.jpg",
-  "/images/foto-32.jpg",
-  "/images/foto-33.jpg",
-  "/images/foto-34.jpg",
-  "/images/foto-35.jpg",
-  "/images/foto-36.jpg",
-  "/images/foto-37.jpg",
-  "/images/foto-38.jpg",
-  "/images/foto-39.jpg",
-  "/images/foto-40.jpg",
-  "/images/foto-41.jpg",
-  "/images/foto-42.jpg",
-  "/images/foto-43.jpg",
-  "/images/foto-44.jpg",
-  "/images/foto-45.jpg",
-  "/images/foto-46.jpg",
-  "/images/foto-47.jpg",
-  "/images/foto-48.jpg",
-  "/images/foto-49.jpg",
-  "/images/foto-50.jpg",
 ];
 
 const About = () => {
